@@ -1,22 +1,23 @@
-/* Desktop only */
 @media screen and (min-width: 900px) {
 
-  /* 1) Center the main page content column and make it wider */
+  /* 1) Center and widen the main survey column */
+  #survey-canvas #contents,
   #survey-canvas #contents .transition-content,
   #survey-canvas #contents .content {
-    width: 100% !important;
-    max-width: 1400px !important;   /* <-- increase this (e.g., 1600px) */
+    width: 90vw !important;        /* <-- controls how wide it gets */
+    max-width: 90vw !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* 2) Remove the fixed 976px (or similar) question widths */
-  #survey-canvas section[id^="question-"] {
+  /* 2) Remove per-question fixed widths (e.g., 976px) */
+  #survey-canvas section[id^="question-"],
+  #survey-canvas section.question {
     width: 100% !important;
     max-width: 100% !important;
   }
 
-  /* 3) Ensure the inside of questions uses full available width */
+  /* 3) Ensure inner wrappers don’t re-cap width */
   #survey-canvas section[id^="question-"] .question-error-wrapper,
   #survey-canvas section[id^="question-"] .QuestionOuter,
   #survey-canvas section[id^="question-"] .QuestionBody {
