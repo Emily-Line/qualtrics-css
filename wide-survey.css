@@ -1,3 +1,6 @@
+#survey-canvas #contents { outline: 6px solid blue !important; }
+
+
 @media screen and (min-width: 900px) {
 
   /* 1) Center and widen the main survey column */
@@ -25,3 +28,4 @@
     max-width: 100% !important;
   }
 }
+
